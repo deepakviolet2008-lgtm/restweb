@@ -1,5 +1,6 @@
 # Ex.07 Restaurant Website
-## Date:
+## Date:19/12/2025
+# ref no:25018314
 
 ## AIM:
 To develop a static Restaurant website to display the food items and services provided by them.
@@ -364,6 +365,9 @@ footer {
 ```
 
 ## OUTPUT:
+<img width="1869" height="946" alt="image" src="https://github.com/user-attachments/assets/20acd533-2a1e-4955-8d55-b2c04701284f" />
+<img width="1887" height="692" alt="image" src="https://github.com/user-attachments/assets/446ee750-ef9b-45ab-82ae-7354ea352aa4" />
+<img width="1883" height="934" alt="image" src="https://github.com/user-attachments/assets/d7745a5f-bcf5-4e7d-a359-0e02fd53188e" />
 
 
 ## RESULT:
