@@ -1,5 +1,5 @@
-# Ex.07 Restaurant Website
-## Date:19/12/2025
+# Ex.06 Restaurant Website
+## Date:08.03.2026
 # ref no:25018314
 
 ## AIM:
@@ -29,346 +29,434 @@ Validate the HTML code.
 Publish the website in the given URL.
 
 ## PROGRAM:
-```index
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Spice Haven | Home</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <nav>
-      <h1>Spice Haven</h1>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="admin.html">Administration</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section class="hero">
-    <h2>Welcome to Spice Haven</h2>
-    <p>Where traditional Indian flavors meet modern dining.</p>
-    <a href="menu.html" class="btn">Explore Menu</a>
-  </section>
-
-  <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <p>📍 123 Main Street, Chennai, India</p>
-    <p>📞 +91 98765 43210</p>
-    <p>📧 info@spicehaven.com</p>
-  </section>
-
-  <footer>
-    <p>© 2025 Spice Haven. All rights reserved.</p>
-  </footer>
-</body>
-</html>
-
-menu
-
-!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Spice Haven | Menu</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <nav>
-      <h1>Spice Haven</h1>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="menu.html" class="active">Menu</a></li>
-        <li><a href="admin.html">Administration</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section class="menu">
-    <h2>Our Menu</h2>
-    <div class="menu-grid">
-      <div class="menu-item"><img src="parotta.png"><h3>parotta</h3><span>₹320</span></div>
-      <div class="menu-item"><img src="prawn.png"><h3>Prawn</h3><span>₹280</span></div>
-      <div class="menu-item"><img src="rasamula.png"><h3>rasamula</h3><span>₹350</span></div>
-      <div class="menu-item"><img src="shwarama.png"><h3>shwarama</h3><span>₹180</span></div>
-      <div class="menu-item"><img src="pannir masala.png"><h3>pannir</h3><span>₹200</span></div>
-      <div class="menu-item"><img src="soup.png"><h3>soup</h3><span>₹160</span></div>
-      <div class="menu-item"><img src="briyani.png"><h3>briyani</h3><span>₹300</span></div>
-      <div class="menu-item"><img src="chappathi.png"><h3>chappathi</h3><span>₹220</span></div>
-      <div class="menu-item"><img src="friedrice.png"><h3>friedrice</h3><span>₹60</span></div>
-      <div class="menu-item"><img src="bread.png"><h3>bread</h3><span>₹100</span></div>
-      <div class="menu-item"><img src="tandoori.png"><h3>tandoori</h3><span>₹90</span></div>
-      <div class="menu-item"><img src="chicken.png"><h3>chicken</h3><span>₹50</span></div>
-    </div>
-  </section>
-
-  <footer>
-    <p>© 2025 Spice Haven. All rights reserved.</p>
-  </footer>
-</body>
-</html>
-
-admin
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Spice Haven | Administration</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <nav>
-      <h1>Spice Haven</h1>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="admin.html" class="active">Administration</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section class="admin">
-    <h2>Our Administration Team</h2>
-    <div class="admin-grid">
-
-      <div class="admin-card">
-        <img src="image1.png" alt="Manager">
-        <h3>rajesh</h3>
-        <p>General Manager</p>
-      </div>
-
-      <div class="admin-card">
-        <img src="image2.png" alt="Chef">
-        <h3> tony</h3>
-        <p>Head Chef</p>
-      </div>
-
-      <div class="admin-card">
-        <img src="image3.png" alt="Sous Chef">
-        <h3>bruss</h3>
-        <p>Sous Chef</p>
-      </div>
-
-      <div class="admin-card">
-        <img src="image5.png" alt="Waiter">
-        <h3>emilye</h3>
-        <p>Senior Waitress</p>
-      </div>
-
-      <div class="admin-card">
-        <img src="image4.png" alt="Cashier">
-        <h3>steve rogerr</h3>
-        <p>Cashier</p>
-      </div>
-
-      <div class="admin-card">
-        <img src="image6.png" alt="Cleaner">
-        <h3>ravi</h3>
-        <p>Housekeeping Staff</p>
-      </div>
-
-    </div>
-  </section>
-
-  <footer>
-    <p>© 2025 Spice Haven. All rights reserved.</p>
-  </footer>
-</body>
-</html>
-
-css
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
-body {
-  background-color: #fffaf5;
-  color: #333;
-}
-
-/* NAVIGATION */
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #ff7b00;
-  padding: 1rem 2rem;
-}
-
-nav h1 {
-  color: white;
-  font-size: 1.5rem;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-}
-
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-nav ul li a.active,
-nav ul li a:hover {
-  border-bottom: 2px solid white;
-}
-
-/* HERO SECTION */
-.hero {
-  background: url('images/restaurant.jpg') center/cover no-repeat;
-  height: 80vh;
-  color: white;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.hero h2 {
-  font-size: 3rem;
-  margin-bottom: 10px;
-}
-
-.btn {
-  background: white;
-  color: #ff7b00;
-  padding: 10px 25px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.btn:hover {
-  background: #ff7b00;
-  color: white;
-}
-
-/* MENU PAGE */
-.menu {
-  padding: 50px 20px;
-  text-align: center;
-}
-
-.menu h2 {
-  color: #ff7b00;
-  margin-bottom: 40px;
-}
-
-.menu-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
-}
-
-.menu-item {
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  padding: 10px;
-  transition: 0.3s;
-}
-
-.menu-item:hover {
-  transform: scale(1.05);
-}
-
-.menu-item img {
-  width: 100%;
-  height: 180px;
-  border-radius: 10px;
-  object-fit: cover;
-}
-
-.menu-item h3 {
-  color: #ff7b00;
-  margin-top: 10px;
-}
-
-/* ADMINISTRATION PAGE */
-.admin {
-  padding: 60px 20px;
-  text-align: center;
-  background: #fff3e0;
-}
-
-.admin h2 {
-  color: #ff7b00;
-  margin-bottom: 30px;
-}
-
-.admin-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 25px;
-}
-
-.admin-card {
-  background: white;
-  padding: 15px;
-  border-radius: 15px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.admin-card img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.admin-card h3 {
-  margin: 10px 0 5px;
-  color: #ff7b00;
-}
-
-.admin-card p {
-  color: #555;
-  font-weight: 500;
-}
-
-/* CONTACT + FOOTER */
-.contact {
-  text-align: center;
-  padding: 40px 20px;
-}
-
-footer {
-  background: #ff7b00;
-  color: white;
-  text-align: center;
-  padding: 15px 0;
-  margin-top: 30px;
-}
 ```
+rest.html
 
+<html>
+    <head>
+        <title>Taj Hotel</title>
+        <style>
+            .container
+{
+    background-image: url("taj1.jpg");
+    background-size:cover;
+    background-position:center;
+    height: 650px;
+    padding:20px;
+}
+.navbar
+{
+    background:white;
+    width:420px;
+    padding:10px;
+    float:right;
+    text-align:center;
+}
+.navbar a
+{
+    margin:15px;
+    color:black;
+    text-decoration:underline;
+    font-weight:bold;
+}
+.para
+{
+    margin-top:120px;
+    margin-left:40px;
+}
+.para h1
+{
+    color: gold;
+}
+.para h2
+{
+    color: white;
+}
+.quote
+{
+    color:yellow;
+    text-align:center;
+    font-style:italic;
+    margin-top:30px;
+}
+.p1
+{
+    color:yellow;
+    text-align:center;
+    margin-top:10px;
+}
+.image
+{
+    display:flex;
+    justify-content:space-evenly;
+    gap:40px;
+    margin-top:40px;
+}
+.image img
+{
+    width:450px;
+    height:260px;
+    border-radius:5px;
+}
+footer
+{
+    text-align:center;
+    padding:10px;
+    background:cyan;
+}
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <a href="rest.html">HOME</a>
+                <a href="menu.html">MENU</a>
+                <a href="admin.html">ADMIN</a>
+                <a href="contact.html">CONTACT</a>
+            </div>
+            <div class="para">
+                <h1>TAJ  HOTEL</h1>
+                <h2>Taj Hotels focusing on authenticity, sustainability, and luxury.</h2>
+                <h3 class="quote">"A signature warmth, legendary hospitality, and iconic, regal experiences."</h3>
+                <p class="p1">Taj Hotels, founded in 1903 by Jamsetji Tata, is a renowned chain of luxury hotels and a subsidiary of the Indian Hotels Company Limited (IHCL). </p>
+            </div>
+            <div class="image">
+                <img src="taj2.jpg">
+                <img src="taj3.jpg">
+            </div>
+        </div>
+        <footer>
+            DEEPAK B (25018314)
+        </footer>
+    </body>
+</html>
+
+menu.html
+
+<html>
+    <head>
+        <title>TAJ HOTEL</title>
+        <style>
+            .container
+            {
+                background-image: url("taj1.jpg");
+                background-size:cover;
+                background-position:center;
+                height: 650px;
+                padding:20px;
+            }
+            .navbar
+            {
+                background:white;
+                width:420px;
+                padding:10px;
+                float:right;
+                text-align:center;
+            }
+            .navbar a
+            {
+                margin:15px;
+                color:black;
+                text-decoration:underline;
+                font-weight:bold;
+            }
+            .para
+            {
+                color: gold;
+            }
+            .menu-container
+            {
+                display:flex;
+                justify-content:center;
+                gap:10px;
+            }
+            .card
+            {
+                background:pink;
+                padding:20px;
+                border-radius:10px;
+                text-align:center;
+                width:200px;
+                margin-top: 100px;
+            }
+            .card img
+            {
+                width:140px;
+                height:120px;
+                border-radius:10px;
+            }
+            .card h2
+            {
+                color:blue;
+            }
+            footer
+            {
+                text-align:center;
+                padding:10px;
+                background:cyan;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <a href="rest.html">HOME</a>
+                <a href="menu.html">MENU</a>
+                <a href="admin.html">ADMIN</a>
+                <a href="contact.html">CONTACT</a>
+            </div>
+            <div class="para">
+                <h1>MENU</h1>
+            </div>
+            <div class="menu-container">
+            <div class="card">
+                <img src="menu1.jpeg">
+                <h2>Naan</h2>
+                <p>Rs.300</p>
+            </div>
+            <div class="card">
+                <img src="menu2.jpg">
+                <h2>Briyani</h2>
+                <p>Rs.500</p>
+            </div>
+            <div class="card">
+                <img src="menu3.jpg">
+                <h2>Panner Masala</h2>
+                <p>Rs.350</p>
+            </div>
+            <div class="card">
+                <img src="menu4.jpg">
+                <h2>Pizza</h2>
+                <p>Rs.400</p>
+            </div>
+            <div class="card">
+                <img src="menu5.jpg">
+                <h2>Pan cake</h2>
+                <p>Rs.300</p>
+            </div>
+            <div class="card">
+                <img src="menu6.jpg">
+                <h2>Veg meal</h2>
+                <p>Rs.300</p>
+            </div>
+            <div class="card">
+                <img src="menu7.jpg">
+                <h2>Masala Dosa</h2>
+                <p>Rs.250</p>
+            </div>
+            <div class="card">
+                <img src="menu8.jpg">
+                <h2>Sp Meal</h2>
+                <p>Rs.700</p>
+            </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        DEEPAK B (25018314)
+    </footer>
+    </body>
+</html>
+
+admin.html
+
+<html>
+    <head>
+        <title>TAJ HOTEL</title>
+        <style>
+            .container
+            {
+                background-image: url("taj1.jpg");
+                background-size:cover;
+                background-position:center;
+                height: 650px;
+                padding:20px;
+            }
+            .navbar
+            {
+                background:white;
+                width:420px;
+                padding:10px;
+                float:right;
+                text-align:center;
+            }
+            .navbar a
+            {
+                margin:15px;
+                color:black;
+                text-decoration:underline;
+                font-weight:bold;
+            }
+            .para
+            {
+                color: gold;
+            }
+            .admin-container
+            {
+                display:flex;
+                justify-content:center;
+                gap:20px;
+            }
+            .card
+            {
+                background:white;
+                padding:20px;
+                border-radius:10px;
+                text-align:center;
+                width:180px;
+                height:300px;
+                margin-top: 100px;
+            }
+            .card img
+            {
+                width:180px;
+                height:200px;
+                border-radius:10px;
+            }
+            .card h2
+            {
+                color:orange;
+            }
+            footer
+            {
+                text-align:center;
+                padding:10px;
+                background:cyan;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <a href="rest.html">HOME</a>
+                <a href="menu.html">MENU</a>
+                <a href="admin.html">ADMIN</a>
+                <a href="contact.html">CONTACT</a>
+            </div>
+            <div class="para">
+                <h1>MANAGEMENT TEAM</h1>
+            </div>
+            <div class="admin-container">
+            <div class="card">
+                <img src="deepakimg.jpeg">
+                <h2>DEEPAK</h2>
+                <p>CEO</p>
+            </div>
+            <div class="card">
+                <img src="emilia-clarke.jpg">
+                <h2>Emilia Clarke</h2>
+                <p>manager</p>
+            </div>
+            <div class="card">
+                <img src="vijay.jpg">
+                <h2>Vijay</h2>
+                <p>HR</p>
+            </div>
+            <div class="card">
+                <img src="chef damu.webp">
+                <h2>Damu</h2>
+                <p>Chef</p>
+            </div>
+            <div class="card">
+                <img src="chris.jpg">
+                <h2>chris</h2>
+                <p>cheif Manager</p>
+            </div>
+            <div class="card">
+                <img src="samantha.webp">
+                <h2>Samantha</h2>
+                <p>Customer service manager</p>
+            </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        DEEPAK B (25018314)
+    </footer>
+    </body>
+</html>
+
+contact.html
+
+<html>
+    <head>
+        <title>Taj Hotel</title>
+        <style>
+            .container
+            {
+                background-image: url("taj1.jpg");
+                background-size:cover;
+                background-position:center;
+                height: 650px;
+                padding:20px;
+            }
+            .navbar
+            {
+                background:white;
+                width:420px;
+                padding:10px;
+                float:right;
+                text-align:center;
+            }
+            .navbar a
+            {
+                margin:15px;
+                color:black;
+                text-decoration:underline;
+                font-weight:bold;
+            }
+            .para h1
+            {
+                color:gold;
+            }
+            .para h2
+            {
+                color:aqua;
+            }
+            .para p
+            {
+                color: white;
+            }
+            footer
+            {
+                text-align:center;
+                padding:10px;
+                background:cyan;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <a href="rest.html">HOME</a>
+                <a href="menu.html">MENU</a>
+                <a href="admin.html">ADMIN</a>
+                <a href="contact.html">CONTACT</a>
+            </div>
+            <div class="para">
+                <h1>Contact</h1>
+                <h2>Visit us at:</h2>
+                <p>Taj Hotel,<p>
+                <p>Taj Street,</p>
+                <p>Chennai</p>
+                <h2>Phone:</h2>
+                <p>+91 9700097555</p>
+                <h2>Email ID:</h2>
+                <p>Tajhotel143@gmail.com</p>
+            </div>
+        </div>
+        <footer>
+            DEEPAK B (25018314)
+        </footer>
+    </body>
+</html>
+```
 ## OUTPUT:
-<img width="1869" height="946" alt="image" src="https://github.com/user-attachments/assets/20acd533-2a1e-4955-8d55-b2c04701284f" />
-<img width="1887" height="692" alt="image" src="https://github.com/user-attachments/assets/446ee750-ef9b-45ab-82ae-7354ea352aa4" />
-<img width="1883" height="934" alt="image" src="https://github.com/user-attachments/assets/d7745a5f-bcf5-4e7d-a359-0e02fd53188e" />
 
+![alt text](<Screenshot (35).png>)
+![alt text](<Screenshot (36).png>)
+![alt text](<Screenshot (37).png>)
+![alt text](<Screenshot (38).png>)
 
 ## RESULT:
 The program for designing software company website using HTML and CSS is completed successfully.
